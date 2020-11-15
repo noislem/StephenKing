@@ -72,6 +72,15 @@ a.volver {
     /* border: 1px solid blue; */
 }
 
+/*Clase para esconder un elemento que será visible únicamente a los lectores de pantalla (aplicado para mejorar la accesibilidad: enlace que permite ir directamente al contenido principal de la página y acceso a la visualizació directa del video en Youtube)*/
+.sr {
+    position: absolute;
+    height: 1px;
+    width: 1px;
+    overflow: hidden;
+    clip: rect(1px, 1px, 1px, 1px);
+}
+
 /*Clases aplicadas a las imágenes y vídeos del sitio */
 
 img {
