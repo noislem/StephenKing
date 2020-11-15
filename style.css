@@ -1,7 +1,9 @@
-/*Archivo de estilos para el sitio web Dossier Orwell */
+/*Archivo de estilos para el sitio web de Stephen King de Joan Melsión */
+
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata&display=swap');
 
 body {
-    font: 16px/1.6 Georgia, Times, serif;
+    font-family: 'Inconsolata', monospace;
     color: #000;
 }
 
@@ -13,7 +15,7 @@ h2 {
 }
 
 .h1 {
-    font-family: Helvetica, Arial, sans-serif;
+    /* font-family: Helvetica, Arial, sans-serif; */
     font-size: 2rem;
     text-align: center;
     font-weight: bold;
@@ -46,17 +48,28 @@ a {
 }
 
 a:hover {
-    color: rgba(0, 0, 0, 0.5);
+    color: rgba(172, 28, 28, 0.911);
     text-decoration: none;
 }
 
-/*Clase para esconder un elemento que será visible únicamente a los lectores de pantalla (aplicado para mejorar la accesibilidad: enlace que permite ir directamente al contenido principal de la página y acceso a la visualizació directa del video en Youtube)*/
-.sr {
-    position: absolute;
-    height: 1px;
-    width: 1px;
-    overflow: hidden;
-    clip: rect(1px, 1px, 1px, 1px);
+a.pelicula {
+    font-size: 0.75rem;
+    color: #000;
+    margin-top: 50px;
+    padding-top: 15px;
+    height: 60px;
+    text-align: center;
+    /* border: 1px solid blue; */
+}
+
+a.volver {
+    font-size: 1.1rem;
+    color: rgba(172, 28, 28, 0.911);
+    margin-top: 50px;
+    padding-top: 15px;
+    height: 60px;
+    text-align: center;
+    /* border: 1px solid blue; */
 }
 
 /*Clases aplicadas a las imágenes y vídeos del sitio */
@@ -115,7 +128,7 @@ footer.footer {
     margin-top: 50px;
     padding-top: 15px;
     height: 60px;
-    font-family: Helvetica, Arial, sans-serif;
+    /* font-family: Helvetica, Arial, sans-serif; */
     text-align: center;
     border-top: 1px solid #000;
     /* border: 1px solid blue; */
@@ -135,7 +148,7 @@ footer.footer p {
 /*Menú de navegación */
 
 nav {
-    font-family: Helvetica, Arial, sans-serif;
+    /* font-family: Helvetica, Arial, sans-serif; */
     font-size: 1.3rem;
     border-bottom: 1px solid #000;
 }
@@ -220,6 +233,16 @@ dt {
 dt cite {
     font-style: normal;
 }
+
+select {
+    margin-top: 0px;
+    padding-top: 15px;
+    padding: .25em;
+    border: 0;
+    border-bottom: 2px solid currentcolor; 
+    letter-spacing: .15em;
+    border-radius: 0;
+  }
 
   /* fin de zona común a todas las resoluciones */
   @media screen and (min-width:800px) {
