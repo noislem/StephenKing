@@ -1,1 +1,0 @@
-{"version":3,"sources":["index.js"],"names":["name","console","log"],"mappings":";AAAA,IAAMA,EAAO,YACbC,QAAQC,IAAaF,SAAAA,OAAAA","file":"SKWeb.79561c6b.js","sourceRoot":"..","sourcesContent":["const name = 'PEC 1!!!!';\nconsole.log(`Hello ${name}`)\n"]}
