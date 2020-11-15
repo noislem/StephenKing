@@ -1,8 +1,8 @@
-function VideoEnNuevaVentana (strURL, strTitulo) {
+VideoEnNuevaVentana = function VideoEnNuevaVentana (strURL, strTitulo) {
     window.open(strURL, strTitulo, "width=560, height=415");
 }
 
-function masPeliculas() {
+masPeliculas = function masPeliculas() {
     var x = document.getElementById("otraPeliculas").value;
     window.location=x;
   }
