@@ -19,15 +19,15 @@ h2 {
     font-size: 2rem;
     text-align: center;
     font-weight: bold;
-    -webkit-animation: bounceIn 3s;
-    -webkit-animation-direction: alternate-reverse;
-    -webkit-animation-timing-function: ease-in-out;
-    -webkit-animation-iteration-count: 5;
+    animation: bounceIn 3s;
+    animation-direction: alternate-reverse;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: 5;
 }
 
 .h1:hover {
-    -webkit-animation-play-state: paused;
-  }
+  animation-play-state: paused;
+}
 
 .h1>span:first-child {
     font-weight: 400;
@@ -289,44 +289,22 @@ select {
     margin-right: 1px;
   }
 
-  @-webkit-keyframes bounceIn{
-    0% { 
-      transform: scale(0.1); 
-      -webkit-transform: scale(0.1);
-      opacity: 0;
-    } 
-  
-    60% { 
-      transform: scale(1.2); 
-      -webkit-transform: scale(1.2);
-      opacity: 1;
-    } 
-  
-    100% { 
-      transform: scale(1); 
-      -webkit-transform: scale(1);
-    }
-  }
-  
   @keyframes bounceIn{
     0% { 
       transform: scale(0.1); 
-      -webkit-transform: scale(0.1);
       opacity: 0;
     } 
   
     60% { 
       transform: scale(1.2); 
-      -webkit-transform: scale(1.2);
       opacity: 1;
     } 
   
     100% { 
       transform: scale(1); 
-      -webkit-transform: scale(1);
     }
   }
-
+  
   ul.separada {
     line-height: 6;
   }
