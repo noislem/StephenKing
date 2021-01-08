@@ -1,0 +1,356 @@
+/*Archivo de estilos para el sitio web de Stephen King de Joan Melsión */
+
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata&display=swap');
+
+body {
+    font-family: 'Inconsolata', monospace;
+    color: #000;
+}
+
+h1,
+h1,
+h2 {
+    line-height: 1em;
+    margin-bottom: 1.5rem;
+}
+
+.h1 {
+    /* font-family: Helvetica, Arial, sans-serif; */
+    font-size: 2rem;
+    text-align: center;
+    font-weight: bold;
+    -webkit-animation: bounceIn 3s;
+            animation: bounceIn 3s;
+    animation-direction: alternate-reverse;
+    -webkit-animation-timing-function: ease-in-out;
+            animation-timing-function: ease-in-out;
+    -webkit-animation-iteration-count: 5;
+            animation-iteration-count: 5;
+}
+
+.h1:hover {
+  -webkit-animation-play-state: paused;
+          animation-play-state: paused;
+}
+
+.h1>span:first-child {
+    font-weight: 400;
+}
+
+h1 {
+    font-size: 2.5rem;
+}
+
+h2 {
+    font-size: 2rem;
+}
+
+p {
+    font-size: 1.1rem;
+    margin-bottom: 1rem;
+}
+
+abbr {
+    text-decoration: none;
+    cursor: help;
+}
+
+a {
+    color: inherit;
+}
+
+a:hover {
+    color: rgba(172, 28, 28, 0.911);
+    text-decoration: none;
+}
+
+a.pelicula {
+    font-size: 0.75rem;
+    color: #000;
+    margin-top: 50px;
+    padding-top: 15px;
+    height: 60px;
+    text-align: center;
+    /* border: 1px solid blue; */
+}
+
+a.volver {
+    font-size: 1.1rem;
+    color: rgba(172, 28, 28, 0.911);
+    margin-top: 50px;
+    padding-top: 15px;
+    height: 60px;
+    text-align: center;
+    /* border: 1px solid blue; */
+}
+
+/*Clase para esconder un elemento que será visible únicamente a los lectores de pantalla (aplicado para mejorar la accesibilidad: enlace que permite ir directamente al contenido principal de la página y acceso a la visualizació directa del video en Youtube)*/
+.sr {
+    position: absolute;
+    height: 1px;
+    width: 1px;
+    overflow: hidden;
+    clip: rect(1px, 1px, 1px, 1px);
+}
+
+/*Clases aplicadas a las imágenes y vídeos del sitio */
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* img.izquierda {
+    float: left;
+  }
+  img.derecha {
+    float: right;
+  } */
+
+figure {
+    width: 75%;
+    margin: 30px auto;
+    text-align: center;
+}
+
+figcaption {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    font-size: 1rem;
+}
+
+.video-fluid {
+    position: relative;
+    display: block;
+    width: 100%;
+    padding: 0;
+    overflow: hidden;
+}
+
+.video-fluid-item {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
+}
+
+.video-fluid::before {
+    display: block;
+    content: "";
+    padding-top: 56.25%;
+}
+
+/*Contenedores del sitio */
+
+header.header {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    text-align: center;
+    /* border: 1px solid blue; */
+}
+
+footer.footer {
+    margin-top: 50px;
+    padding-top: 15px;
+    height: 60px;
+    /* font-family: Helvetica, Arial, sans-serif; */
+    text-align: center;
+    border-top: 1px solid #000;
+    /* border: 1px solid blue; */
+}
+
+footer.footer p {
+    font-size: 0.8rem;
+}
+
+.container {
+    width: 90%;
+    max-width: 1140px;
+    margin: 50px auto;
+    /* border: 1px solid red; */
+}
+
+/*Menú de navegación */
+
+nav {
+    /* font-family: Helvetica, Arial, sans-serif; */
+    font-size: 1.3rem;
+    border-bottom: 1px solid #000;
+}
+
+nav ul {
+    list-style: none;
+    text-transform: uppercase;
+    font-size: 0.9rem;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    padding: 3px;
+}
+
+nav ul li a {
+    color: #000;
+    text-decoration: none;
+}
+
+nav ul li.active a {
+    font-weight: 900;
+}
+
+/*Estilos para los artículos */
+
+.summary {
+    text-align: center;
+    font-size: 1.75rem;
+}
+
+.metadata ul {
+    list-style-type: none;
+    text-align: center;
+    font-size: 1.3rem;
+    padding-bottom: 1rem;
+}
+
+figure.cite {
+    border-left: 5px solid #000;
+    padding-left: 15px;
+    text-align: left;
+}
+
+figure.cite blockquote {
+    margin-left: 0;
+}
+
+figure.cite figcaption {
+    text-align: left;
+    font-size: 1.1rem;
+}
+
+article header {
+    text-align: center;
+}
+
+article footer {
+    text-align: center;
+    margin-top: 50px;
+}
+
+article footer p {
+    font-size: 0.75rem;
+}
+
+article ol li {
+    font-size: 1.3rem;
+}
+
+article ol ul li {
+    font-size: 1.1rem;
+}
+
+dt {
+    font-size: 1.5rem;
+    margin-top: 3rem;
+}
+
+dt cite {
+    font-style: normal;
+}
+
+select {
+    margin-top: 0px;
+    padding-top: 15px;
+    padding: .25em;
+    border: 0;
+    border-bottom: 2px solid currentcolor; 
+    letter-spacing: .15em;
+    border-radius: 0;
+  }
+
+   footer img {
+    width: 220px;
+    height: 270px;
+    margin: 2px;
+  }
+
+  div.lista_imagen {
+    width: 35%;
+    margin-left: 0px auto;
+    padding: 0px;
+  }
+
+  div.lista_imagen a {
+    margin-left: 10px;
+  }
+
+  div.lista_imagen img.derecha{
+    float: left;
+    margin-right: 1px;
+  }
+
+  @-webkit-keyframes bounceIn{
+    0% { 
+      transform: scale(0.1); 
+      opacity: 0;
+    } 
+  
+    60% { 
+      transform: scale(1.2); 
+      opacity: 1;
+    } 
+  
+    100% { 
+      transform: scale(1); 
+    }
+  }
+
+  @keyframes bounceIn{
+    0% { 
+      transform: scale(0.1); 
+      opacity: 0;
+    } 
+  
+    60% { 
+      transform: scale(1.2); 
+      opacity: 1;
+    } 
+  
+    100% { 
+      transform: scale(1); 
+    }
+  }
+  
+  ul.separada {
+    line-height: 6;
+  }
+  
+  .clip-svg {
+    -webkit-clip-path: polygon(19% 21%, 52% 8%, 81% 28%, 22% 50%, 56% 83%, 84% 53%);
+            clip-path: polygon(19% 21%, 52% 8%, 81% 28%, 22% 50%, 56% 83%, 84% 53%);
+  }
+  
+
+  /* fin de zona común a todas las resoluciones */
+  @media screen and (min-width:800px) {
+    body {
+      font-size:100%;
+      /* ampliamos los textos si mide más de 800px */
+    }
+  }
+  
+  /* fin de la zona para más de 800px de ancho de pantalla */
+  @media screen and (min-width:1200px) {
+    body {
+      font-size:120%;
+      /* ampliamos más aún los textos si mide más de 1200px */
+    }
+  }
+  
+  /* fin de la zona para más de 1200px de ancho de pantalla */
+
+/*# sourceMappingURL=/style.e308ff8e.css.map */
